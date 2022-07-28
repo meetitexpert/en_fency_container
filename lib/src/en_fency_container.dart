@@ -33,8 +33,19 @@ class _en_fency_containerState extends State<en_fency_container> {
       ),
       child: Column(
         children: [
-          Text("${widget.title}", style: TextStyle(color: widget.textColor, fontSize: 20, fontWeight: FontWeight.bold,),maxLines: 2,textAlign: TextAlign.center,),
-          Text("${widget.subTitle}", style: TextStyle(color: widget.textColor, fontSize: 14, fontWeight: FontWeight.normal),textAlign: TextAlign.center,),
+          Text("${widget.title}", 
+            style: TextStyle(
+                color: widget.textColor, 
+                fontSize: 20, 
+                fontWeight: FontWeight.bold,),
+            maxLines: 2,
+            textAlign: TextAlign.center,),
+          Text("${widget.subTitle}", 
+            style: TextStyle(
+                color: widget.textColor, 
+                fontSize: 14, 
+                fontWeight: FontWeight.normal),
+                textAlign: TextAlign.center,),
         ],
       ),
     );
