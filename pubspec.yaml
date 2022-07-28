@@ -1,7 +1,7 @@
 name: en_fency_container
-description: A new Flutter project.
+description: This library used for fency UI container with text.
 version: 1.0.0
-homepage: 
+homepage: https://github.com/meetitexpert/en_fency_container
 
 environment:
   sdk: ">=2.17.1 <3.0.0"
