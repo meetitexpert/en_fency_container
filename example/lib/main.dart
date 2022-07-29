@@ -1,4 +1,6 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
+import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:en_fency_container/en_fency_container.dart';
@@ -81,7 +83,31 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: en_fency_container(title: "Title", subTitle: "Some detail info here...", height: 100, color2: Colors.blueAccent, textColor: Colors.white,)
+        child: Column(
+          children: [
+            en_fency_container(
+                title: "Title", 
+                subTitle: "Some detail info here...", 
+                height: 100,
+                color1: Colors.yellow, 
+                color2: Colors.red, 
+                textColor: Colors.white, 
+                type: containerType.gradient,),
+            SizedBox(height: 20,),
+            en_fency_container(
+                type: containerType.imageBackground, 
+                title: "Title 1", 
+                subTitle: "Some detail info here...", 
+                textColor: Colors.white, 
+                height: 100,),
+            SizedBox(height:20),
+            en_fency_container(
+                title: "Title 2", 
+                subTitle: "Some detail info here...", 
+                height: 100, 
+                type: containerType.profile,)
+          ],
+        )
       ),
       // This trailing comma makes auto-formatting nicer for build methods.
     );
