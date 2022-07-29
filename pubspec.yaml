@@ -1,6 +1,6 @@
 name: en_fency_container
 description: This library used for fency UI container with text.
-version: 1.0.1
+version: 1.0.3
 homepage: https://github.com/meetitexpert/en_fency_container
 
 environment:

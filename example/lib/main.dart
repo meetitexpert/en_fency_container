@@ -105,7 +105,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 title: "Title 2", 
                 subTitle: "Some detail info here...", 
                 height: 100, 
-                type: containerType.profile,)
+                type: containerType.profile,
+                borderColor: Colors.amberAccent,)
           ],
         )
       ),

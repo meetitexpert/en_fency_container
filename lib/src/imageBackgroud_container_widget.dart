@@ -24,7 +24,7 @@ class imageBackgroudContainerWidget extends StatelessWidget {
       ),
       child: Stack(
         children: [
-            Image.network(widget.imgeUrl ?? "https://picsum.photos/250?image=9"),
+            Image.network(widget.imageUrl ?? "https://picsum.photos/250?image=9"),
             Column(
           children: [
             Text("${widget.title}", 
