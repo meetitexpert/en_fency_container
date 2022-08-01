@@ -83,31 +83,38 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Column(
-          children: [
-            en_fency_container(
-                title: "Title", 
-                subTitle: "Some detail info here...", 
-                height: 100,
-                color1: Colors.yellow, 
-                color2: Colors.red, 
-                textColor: Colors.white, 
-                type: containerType.gradient,),
-            SizedBox(height: 20,),
-            en_fency_container(
-                type: containerType.imageBackground, 
-                title: "Title 1", 
-                subTitle: "Some detail info here...", 
-                textColor: Colors.white, 
-                height: 100,),
-            SizedBox(height:20),
-            en_fency_container(
-                title: "Title 2", 
-                subTitle: "Some detail info here...", 
-                height: 100, 
-                type: containerType.profile,
-                borderColor: Colors.amberAccent,)
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ListView(
+            children: [
+              en_fency_container(
+                  width: 300,
+                  title: "Title", 
+                  subTitle: "Some detail info here...", 
+                  height: 100,
+                  color1: Colors.yellow, 
+                  color2: Colors.red, 
+                  textColor: Colors.white, 
+                  type: containerType.gradient,),
+              SizedBox(height: 20,),
+              en_fency_container(
+                  imageUrl: 'https://images.unsplash.com/photo-1610307766999-01f45d259959?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+                //   width: 300,
+                  type: containerType.imageBackground, 
+                  title: "Title 1", 
+                  subTitle: "Some detail info here...", 
+                  textColor: Colors.white, 
+                  height: 250,),
+              SizedBox(height:20),
+              en_fency_container(
+                  title: "Title 2", 
+                  subTitle: "Some detail info here...", 
+                  height: 100, 
+                  width: 300,
+                  type: containerType.profile,
+                  borderColor: Colors.amberAccent,)
+            ],
+          ),
         )
       ),
       // This trailing comma makes auto-formatting nicer for build methods.

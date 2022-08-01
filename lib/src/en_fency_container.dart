@@ -12,7 +12,7 @@ enum containerType {
 }
 
 class en_fency_container extends StatefulWidget {
-  const en_fency_container({Key? key, this.width, this.height, this.title, this.subTitle, this.color1, this.color2, this.textColor, this.type, this.imageUrl, this.borderColor}) : super(key: key);
+  const en_fency_container({Key? key, this.width, this.height, this.title, this.subTitle, this.color1, this.color2, this.textColor, this.type, this.imageUrl, this.borderColor, this.profileImgUrl, this.userEmail, this.userName, this.userPhoneNo}) : super(key: key);
   final double? width;
   final double? height;
   final String? title;
@@ -23,6 +23,10 @@ class en_fency_container extends StatefulWidget {
   final containerType? type;
   final String? imageUrl;
   final Color? borderColor;
+  final String? profileImgUrl;
+  final String? userName;
+  final String? userEmail;
+  final String? userPhoneNo;
 
   @override
   State<en_fency_container> createState() => _en_fency_containerState();

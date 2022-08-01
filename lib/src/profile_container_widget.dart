@@ -21,21 +21,32 @@ class profileContainerWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: widget.borderColor ?? Colors.black)
       ),
-      child: Column(
+      child: Row(
         children: [
-          Text("${widget.title}", 
-            style: TextStyle(
-                color: widget.textColor, 
-                fontSize: 20, 
-                fontWeight: FontWeight.bold,),
-            maxLines: 2,
-            textAlign: TextAlign.center,),
-          Text("${widget.subTitle}", 
-            style: TextStyle(
-                color: widget.textColor, 
-                fontSize: 14, 
-                fontWeight: FontWeight.normal),
+          Image.network(widget.profileImgUrl ?? 'https://as1.ftcdn.net/v2/jpg/03/46/83/96/1000_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg', width: 100, height: 100,),
+          Column(
+            children: [
+              Text("${widget.userName}", 
+                style: TextStyle(
+                    color: widget.textColor, 
+                    fontSize: 20, 
+                    fontWeight: FontWeight.bold,),
+                maxLines: 2,
                 textAlign: TextAlign.center,),
+              Text("${widget.userEmail}", 
+                style: TextStyle(
+                    color: widget.textColor, 
+                    fontSize: 14, 
+                    fontWeight: FontWeight.normal),
+                    textAlign: TextAlign.center,),
+              Text("${widget.userPhoneNo}", 
+                style: TextStyle(
+                    color: widget.textColor, 
+                    fontSize: 14, 
+                    fontWeight: FontWeight.normal),
+                    textAlign: TextAlign.center,),
+            ],
+          ),
         ],
       ),
     );
