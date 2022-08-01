@@ -90,8 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
               en_fency_container(
                   width: 300,
                   title: "Title", 
-                  subTitle: "Some detail info here...", 
-                  height: 100,
+                  subTitle: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
                   color1: Colors.yellow, 
                   color2: Colors.red, 
                   textColor: Colors.white, 
@@ -107,12 +106,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 250,),
               SizedBox(height:20),
               en_fency_container(
-                  title: "Title 2", 
-                  subTitle: "Some detail info here...", 
+                  profileImgUrl: 'https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png',
+                  userName: "MR ANDY",
+                  userEmail: 'andy@gmail.com',
+                  userPhoneNo: '+123456789876',
                   height: 100, 
                   width: 300,
                   type: containerType.profile,
-                  borderColor: Colors.amberAccent,)
+                  borderColor: Colors.blueGrey,)
             ],
           ),
         )

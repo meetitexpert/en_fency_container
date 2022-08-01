@@ -11,25 +11,51 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Envision Fency container library used for different type of widgets like, Gradiant, Imagebackground or Profile detail containers. This make easy to your coding life.
 
 ## Features
 
-List what your package can do. Maybe include images, gifs, or videos.
+This package inclue the 
+Container with gradiant background.
+Container with image background.
+Container with profile detail.
 
 ## Getting started
 
-List prerequisites and provide or point to information on how to
-start using the package.
+Conatiner with Gradiant
+en_fency_container(
+                  width: 300,
+                  title: "Title", 
+                  subTitle: "Some detail info here...", 
+                  height: 100,
+                  color1: Colors.yellow, 
+                  color2: Colors.red, 
+                  textColor: Colors.white, 
+                  type: containerType.gradient,),
 
-## Usage
+Container with image backgourd
+en_fency_container(
+                  imageUrl: 'https://images.unsplash.com/photo-1610307766999-01f45d259959?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+                  width: 300,
+                  type: containerType.imageBackground, 
+                  title: "Title 1", 
+                  subTitle: "Some detail info here...", 
+                  textColor: Colors.white, 
+                  height: 250,),
 
-Include short and useful examples for package users. Add longer examples
+Profile setting with detail
+en_fency_container(
+                  profileImgUrl: 'https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png',
+                  userName: "MR ANDY",
+                  userEmail: 'andy@gmail.com',
+                  userPhoneNo: '+123456789876',
+                  height: 100, 
+                  width: 300,
+                  type: containerType.profile,
+                  borderColor: Colors.blueGrey,)
 
 
-## Additional information
+## Example
 
-Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+https://tinyurl.com/55tpmh6n
+
